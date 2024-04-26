@@ -131,7 +131,7 @@ function row(user) {
     return tr;
 }
 // сброс значений формы
-document.getElementById("reset").click(function (e) {
+document.getElementById("resetForm").addEventListener('click', function (e) {
     e.preventDefault();
     reset();
 })
