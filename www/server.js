@@ -12,8 +12,6 @@ app.set('views', path.join(__dirname, 'views'));
 const filePath = "users.json";
 
 app.get('/', (req, res) => {
-    //const fileUsers = fs.readFileSync(filePath,"utf8");
-    //const users = JSON.parse(fileUsers);
     res.render('index', {users: []});
 });
 
